@@ -82,7 +82,7 @@ const AddProduct = () => {
                                 id="name"
                                 name="name"
                                 value={name}
-                                placeholder=" Type Your first name here.."
+                                placeholder=" Type product name here.."
                                 onChange={(e) => onInputChange(e)}
                             />
                         </div>
@@ -97,7 +97,7 @@ const AddProduct = () => {
                                 id="quantity"
                                 name="quantity"
                                 value={quantity}
-                                placeholder=" Type Your last name here.."
+                                placeholder=" Type the quantity here.."
                                 onChange={(e) => onInputChange(e)}
                             />
                         </div>
@@ -112,7 +112,7 @@ const AddProduct = () => {
                                 id="price"
                                 name="price"
                                 value={price}
-                                placeholder="Type your address here.."
+                                placeholder="Type price here.."
                                 onChange={(e) => onInputChange(e)}
                             />
                         </div>

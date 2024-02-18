@@ -1,0 +1,65 @@
+.containerp {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .headp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .searchp input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 40rem;
+  }
+  
+  .Table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .Table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Table th,
+  .Table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .Table th {
+    background-color: #f2f2f2;
+  }
+  
+  .Actions svg {
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .add-button {
+    margin-top: 20px;
+  }
+
+  .Table img {
+    max-width: 100px; /* Largeur maximale de l'image */
+    max-height: 100px; /* Hauteur maximale de l'image */
+    object-fit: cover; /* Ajustement de l'image pour remplir le conteneur tout en conservant les proportions */
+  }
+  
+  .nada {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #777;
+  }
+  

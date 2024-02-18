@@ -30,13 +30,36 @@ const EditProduct = ({isActive, productInfo}) => {
   const { name, price, quantity, image } = product;
 
   const onInputChange = (e) => {
-    setProduct({ ...product, [e.target.name]: e.target.value });
+    if (e.target.name === "image") {
+      // Si la cible est un champ de type fichier, mettez à jour le fichier image
+      setProduct({ ...product, image: e.target.files[0] });
+    } else {
+      setProduct({ ...product, [e.target.name]: e.target.value });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.put(`${config.apiUrl}/editProduct/${productInfo._id}`, product);
-    window.location.reload();
+    try {
+      const formData = new FormData();
+      formData.append("name", product.name);
+      formData.append("quantity", product.quantity);
+      formData.append("price", product.price);
+      formData.append("image", product.image);
+
+      await axios.put(
+        `${config.apiUrl}/editProduct/${productInfo._id}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      window.location.reload();
+    } catch (error) {
+      console.error("Error editing product:", error);
+    }
   };
 
   return (
@@ -96,15 +119,13 @@ const EditProduct = ({isActive, productInfo}) => {
           </div>
           <div className="row">
             <div className="col-25">
-              <label htmlFor="image">Upload the image</label>
+              <label htmlFor="file">Upload the image</label>
             </div>
             <div className="col-75">
               <input
                 type="file"
                 id="image"
                 name="image"
-                value={image}
-                placeholder="Type your image here.."
                 onChange={(e) => onInputChange(e)}
               />
             </div>

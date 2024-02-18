@@ -31,7 +31,8 @@ const Products = () => {
     // function to delete an user
     const deleteProductData = async (id) => {
         axios.delete(`${config.apiUrl}/deleteProduct/${id}`);
-        fetchData();
+        window.location.reload()
+        // fetchData()
     };
 
     const startEdit = (product) => {
@@ -43,12 +44,12 @@ const Products = () => {
         <div>
             <div className="AllProducts">
                 <div>
-                    <div className="container">
-                        <div className="head">
+                    <div className="containerp">
+                        <div className="headp">
                             <div className="button">
                                 <button class="button-57" role="button" onClick={() => navigate('/')}><span class="text">Retour</span><span>Accueil</span></button>
                             </div>
-                            <div className="search">
+                            <div className="searchp">
                                 <input
                                     type="text"
                                     placeholder="Search....."

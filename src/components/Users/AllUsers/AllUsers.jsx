@@ -30,7 +30,8 @@ const Users = () => {
   // function to delete an user
   const deleteUserData = async (id) => {
     axios.delete(`${config.apiUrl}/removeUser/${id}`);
-    fetchData();
+    // fetchData();
+    window.location.reload()
   };
 
   const startEdit = (user) => {
