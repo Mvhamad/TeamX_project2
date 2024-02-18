@@ -39,9 +39,10 @@
     background-color: #f2f2f2;
   }
   
-  .Actions svg {
+  .Actionsp svg {
     cursor: pointer;
     margin-right: 5px;
+    padding: 22px;
   }
   
   .add-button {

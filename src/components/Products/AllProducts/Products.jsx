@@ -82,7 +82,7 @@ const Products = () => {
                                                 <td data-label="Désignation">{product.name}</td>
                                                 <td data-label="Quantité">{product.quantity}</td>
                                                 <td data-label="Quantité">{product.price} XOF</td>
-                                                <td className="Actions" data-label="Actions">
+                                                <td className="Actionsp" data-label="Actions">
                                                     <svg
                                                         onClick={() => startEdit(product)}
                                                         xmlns="http://www.w3.org/2000/svg"
