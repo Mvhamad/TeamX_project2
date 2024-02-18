@@ -1,0 +1,214 @@
+.Actions {
+    display: flex;
+}
+
+.AllUsers {
+    background-color: #0b2447;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.dataTable {
+    margin-left: 20%;
+    width: 55%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 2%;
+    border-radius: 2rem;
+}
+
+.search {
+    padding-left: 23%;
+    width: 30%;
+    margin-bottom: 10px;
+}
+.head{
+    display: flex;
+    align-items: center;
+}
+input[type="text"] {
+    width: 100vh;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.pointing-button {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+}
+
+.actions svg {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.add-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nada {
+    margin-top: 2%;
+    margin-left: 47.5%;
+    width: 15%;
+    font-size: larger;
+    border: 2px solid #ccc;
+    border-radius: 3em;
+}
+
+.nada p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    th,
+    td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .actions svg {
+        margin-left: 5px;
+    }
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader>* {
+    margin-top: -150px;
+}
+
+svg {
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    margin-right: 40px;
+}
+
+svg {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+}
+
+/* CSS */
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 14px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 10px;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: x-large;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 70%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}

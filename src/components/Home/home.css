@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.home {
+    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://cdn.pixabay.com/photo/2018/04/12/18/13/sunset-3314275_960_720.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+  }
+
+  .header {
+    text-align: center;
+    padding: 8rem;
+  }
